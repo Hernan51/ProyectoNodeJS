@@ -10,7 +10,7 @@ app.listen(port, () => {
     console.log(`hola servidor ejecucion en http://localhost:${port}`);
 })
 
-app.get('/datos', (req, res) => {
+app.get('/', (req, res) => {
     res.send({
         "secretBase": "Super tower",
         "active": true,
